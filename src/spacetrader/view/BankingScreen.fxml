@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.controller.BankingScreenController">
+   <children>
+      <Label layoutX="30.0" layoutY="71.0" text="Player's Credit: " />
+      <Label fx:id="creditP" layoutX="137.0" layoutY="71.0" prefHeight="16.0" prefWidth="91.0" text="Label" />
+      <Label layoutX="245.0" layoutY="18.0" text="Space Bank">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="104.0" text="Banking Status" />
+      <Label layoutX="45.0" layoutY="138.0" text="Loaned: " />
+      <Label layoutX="45.0" layoutY="169.0" text="Interest Rate:" />
+      <Label fx:id="loanedAmount" layoutX="149.0" layoutY="138.0" text="Label" />
+      <Label fx:id="interestRate" layoutX="149.0" layoutY="169.0" maxWidth="-Infinity" text="Label" />
+      <TabPane layoutX="245.0" layoutY="71.0" prefHeight="205.0" prefWidth="332.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Loaning">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Enter the amount you want to loan from the bank" />
+                        <Button layoutX="136.0" layoutY="122.0" mnemonicParsing="false" onAction="#clickLoanButton" text="Loan" />
+                        <TextField fx:id="loanInput" layoutX="33.0" layoutY="60.0" prefHeight="26.0" prefWidth="255.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Paying Off">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="125.0" layoutY="115.0" mnemonicParsing="false" onAction="#clickPayButton" text="Pay" />
+                        <Label layoutX="9.0" layoutY="14.0" text="Enter the amount you want to pay off to the bank" />
+                        <TextField fx:id="payInput" layoutX="23.0" layoutY="54.0" prefHeight="26.0" prefWidth="245.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="backB" layoutX="30.0" layoutY="330.0" mnemonicParsing="false" onAction="#clickBackButton" text="Back" />
+   </children>
+</AnchorPane>

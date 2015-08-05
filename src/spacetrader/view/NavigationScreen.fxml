@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" stylesheets="@navigationBackground.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.controller.NavigationScreenController">
+   <children>
+      <Label layoutX="34.0" layoutY="54.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="84.0" text="Location:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="114.0" text="Tech Level:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="143.0" text="Environment:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lbName" layoutX="138.0" layoutY="54.0" prefHeight="21.0" prefWidth="132.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lbCoordinate" layoutX="138.0" layoutY="84.0" prefHeight="21.0" prefWidth="132.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lbTechLevel" layoutX="138.0" layoutY="114.0" prefHeight="21.0" prefWidth="132.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lbEnvironment" layoutX="138.0" layoutY="143.0" prefHeight="21.0" prefWidth="184.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ComboBox fx:id="cbDestination" layoutX="496.0" layoutY="25.0" onAction="#choiceBoxSelect" prefHeight="31.0" prefWidth="184.0" promptText="No nearby planet" />
+      <Label layoutX="26.0" layoutY="23.0" text="Current Planet" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="26.0" layoutY="212.0" text="Destination Planet" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lbDestEnvironment" layoutX="138.0" layoutY="332.0" prefHeight="21.0" prefWidth="184.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lbDestTechLevel" layoutX="138.0" layoutY="301.0" prefHeight="21.0" prefWidth="132.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lbDestCoordinate" layoutX="138.0" layoutY="267.0" prefHeight="21.0" prefWidth="132.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lbDestName" layoutX="138.0" layoutY="238.0" prefHeight="21.0" prefWidth="132.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="332.0" text="Environment:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="301.0" text="Tech Level:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="267.0" text="Location:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="238.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+
+      <Button fx:id="btBack" layoutX="254.0" layoutY="495.0" mnemonicParsing="false" onAction="#clickBackButton" prefHeight="31.0" prefWidth="121.0" text="Back" />
+      <Button fx:id="btTravel" layoutX="401.0" layoutY="495.0" mnemonicParsing="false" onAction="#clickTravelButton" prefHeight="31.0" prefWidth="121.0" text="Travel" />
+      <Label fx:id="lbMessage1" layoutX="26.0" layoutY="399.0" prefHeight="31.0" prefWidth="276.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lbMessage2" layoutX="26.0" layoutY="421.0" prefHeight="31.0" prefWidth="276.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="bSave" layoutX="561.0" layoutY="495.0" mnemonicParsing="false" onAction="#clickSave" prefHeight="31.0" prefWidth="161.0" text="Save" />
+      <Canvas fx:id="canvas" height="400.0" layoutX="322.0" layoutY="75.0" onMouseClicked="#mouseClickHandler" width="400.0" />
+      <Canvas fx:id="outerCanvas" height="400.0" layoutX="322.0" layoutY="75.0" onMouseClicked="#mouseClickHandler" width="400.0" />
+      <Label fx:id="lbGovernment" layoutX="138.0" layoutY="172.0" prefHeight="21.0" prefWidth="184.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="172.0" text="Government:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="363.0" text="Government:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbDestGovernment" layoutX="139.0" layoutY="363.0" prefHeight="21.0" prefWidth="184.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

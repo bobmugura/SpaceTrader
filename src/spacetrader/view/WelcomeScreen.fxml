@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" stylesheets="@welcomeBackground.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.controller.WelcomeScreenController">
+   <children>
+      <Text layoutX="238.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Space Trader">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <Button fx:id="newGame" layoutX="226.0" layoutY="257.0" mnemonicParsing="false" onAction="#openConfigurationDialogScreen" prefHeight="51.0" prefWidth="298.0" text="New Game" textFill="#000000d9">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="bLoad" layoutX="227.0" layoutY="335.0" mnemonicParsing="false" onAction="#openLoadScreen" prefHeight="51.0" prefWidth="298.0" text="Load Game">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="227.0" layoutY="408.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="298.0" text="Quit Game" textFill="#000000d9">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

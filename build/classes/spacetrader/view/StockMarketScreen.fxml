@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.controller.StockScreenController">
+   <children>
+      <TabPane layoutX="122.0" layoutY="20.0" prefHeight="363.0" prefWidth="464.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Planet List 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="sell1" layoutX="380.0" layoutY="21.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Label fx:id="planet1" layoutX="15.0" layoutY="24.0" text="Label" />
+                        <Button fx:id="buy1" layoutX="325.0" layoutY="21.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Button fx:id="sell3" layoutX="380.0" layoutY="81.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Label fx:id="planet2" layoutX="15.0" layoutY="54.0" text="Label" />
+                        <Button fx:id="buy3" layoutX="325.0" layoutY="81.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Button fx:id="sell4" layoutX="380.0" layoutY="111.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Label fx:id="planet3" layoutX="15.0" layoutY="84.0" text="Label" />
+                        <Button fx:id="buy4" layoutX="325.0" layoutY="111.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Button fx:id="buy7" layoutX="325.0" layoutY="201.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Label fx:id="planet7" layoutX="15.0" layoutY="204.0" text="Label" />
+                        <Button fx:id="sell7" layoutX="380.0" layoutY="201.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Button fx:id="buy6" layoutX="325.0" layoutY="171.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Label fx:id="planet5" layoutX="15.0" layoutY="144.0" text="Label" />
+                        <Button fx:id="sell6" layoutX="380.0" layoutY="171.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Button fx:id="buy5" layoutX="325.0" layoutY="141.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Label fx:id="planet4" layoutX="15.0" layoutY="114.0" text="Label" />
+                        <Button fx:id="sell5" layoutX="380.0" layoutY="141.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Button fx:id="buy10" layoutX="325.0" layoutY="291.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Label fx:id="planet10" layoutX="15.0" layoutY="294.0" text="Label" />
+                        <Button fx:id="sell10" layoutX="380.0" layoutY="291.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Button fx:id="buy9" layoutX="325.0" layoutY="261.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Label fx:id="planet9" layoutX="15.0" layoutY="264.0" text="Label" />
+                        <Button fx:id="sell9" layoutX="380.0" layoutY="261.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Button fx:id="buy8" layoutX="325.0" layoutY="231.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Label fx:id="planet8" layoutX="15.0" layoutY="234.0" text="Label" />
+                        <Button fx:id="sell8" layoutX="380.0" layoutY="231.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Label fx:id="planet6" layoutX="15.0" layoutY="174.0" text="Label" />
+                        <Button fx:id="buy2" layoutX="325.0" layoutY="51.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Button fx:id="sell2" layoutX="380.0" layoutY="51.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <TextField fx:id="bqt10" layoutX="278.0" layoutY="291.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt9" layoutX="278.0" layoutY="261.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt8" layoutX="278.0" layoutY="231.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt5" layoutX="278.0" layoutY="141.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt6" layoutX="278.0" layoutY="171.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt7" layoutX="278.0" layoutY="201.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt2" layoutX="278.0" layoutY="51.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt3" layoutX="278.0" layoutY="81.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt4" layoutX="278.0" layoutY="111.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt1" layoutX="278.0" layoutY="21.0" prefHeight="26.0" prefWidth="30.0" />
+                        <Label layoutX="85.0" layoutY="2.0" text="Price" />
+                        <Label layoutX="135.0" layoutY="2.0" text="Interest (%)" />
+                        <Label fx:id="price1" layoutX="85.0" layoutY="24.0" text="Label" />
+                        <Label fx:id="interest1" layoutX="135.0" layoutY="24.0" text="Label" />
+                        <Label fx:id="interest2" layoutX="135.0" layoutY="54.0" text="Label" />
+                        <Label fx:id="price2" layoutX="85.0" layoutY="54.0" text="Label" />
+                        <Label fx:id="price4" layoutX="85.0" layoutY="114.0" text="Label" />
+                        <Label fx:id="interest4" layoutX="135.0" layoutY="114.0" text="Label" />
+                        <Label fx:id="interest3" layoutX="135.0" layoutY="84.0" text="Label" />
+                        <Label fx:id="price3" layoutX="85.0" layoutY="84.0" text="Label" />
+                        <Label fx:id="price7" layoutX="85.0" layoutY="204.0" text="Label" />
+                        <Label fx:id="interest7" layoutX="135.0" layoutY="204.0" text="Label" />
+                        <Label fx:id="interest8" layoutX="135.0" layoutY="234.0" text="Label" />
+                        <Label fx:id="price8" layoutX="85.0" layoutY="234.0" text="Label" />
+                        <Label fx:id="price6" layoutX="85.0" layoutY="174.0" text="Label" />
+                        <Label fx:id="interest6" layoutX="135.0" layoutY="174.0" text="Label" />
+                        <Label fx:id="interest5" layoutX="135.0" layoutY="144.0" text="Label" />
+                        <Label fx:id="price5" layoutX="85.0" layoutY="144.0" text="Label" />
+                        <Label fx:id="price10" layoutX="85.0" layoutY="294.0" text="Label" />
+                        <Label fx:id="interest10" layoutX="135.0" layoutY="294.0" text="Label" />
+                        <Label fx:id="interest9" layoutX="135.0" layoutY="264.0" text="Label" />
+                        <Label fx:id="price9" layoutX="85.0" layoutY="264.0" text="Label" />
+                        <Label fx:id="inv9" layoutX="232.0" layoutY="264.0" text="0" />
+                        <Label fx:id="inv10" layoutX="232.0" layoutY="294.0" text="0" />
+                        <Label fx:id="inv6" layoutX="232.0" layoutY="174.0" text="0" />
+                        <Label fx:id="inv8" layoutX="232.0" layoutY="234.0" text="0" />
+                        <Label fx:id="inv7" layoutX="232.0" layoutY="204.0" text="0" />
+                        <Label layoutX="210.0" layoutY="2.0" text="Inventory" />
+                        <Label fx:id="inv1" layoutX="232.0" layoutY="24.0" text="0" />
+                        <Label fx:id="inv2" layoutX="232.0" layoutY="54.0" text="0" />
+                        <Label fx:id="inv4" layoutX="232.0" layoutY="114.0" text="0" />
+                        <Label fx:id="inv3" layoutX="232.0" layoutY="84.0" text="0" />
+                        <Label fx:id="inv5" layoutX="232.0" layoutY="144.0" text="0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Planet List 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="bqt11" layoutX="278.0" layoutY="17.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt14" layoutX="278.0" layoutY="107.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt13" layoutX="278.0" layoutY="77.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt12" layoutX="278.0" layoutY="47.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt17" layoutX="278.0" layoutY="197.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt16" layoutX="278.0" layoutY="167.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt15" layoutX="278.0" layoutY="137.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt18" layoutX="278.0" layoutY="227.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt19" layoutX="278.0" layoutY="257.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt20" layoutX="278.0" layoutY="287.0" prefHeight="26.0" prefWidth="30.0" />
+                        <Button fx:id="sell12" layoutX="380.0" layoutY="47.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Button fx:id="buy12" layoutX="325.0" layoutY="47.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Label fx:id="planet16" layoutX="15.0" layoutY="172.0" text="Label" />
+                        <Button fx:id="sell18" layoutX="379.0" layoutY="227.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Label fx:id="planet18" layoutX="15.0" layoutY="232.0" text="Label" />
+                        <Button fx:id="buy18" layoutX="325.0" layoutY="227.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Button fx:id="sell19" layoutX="380.0" layoutY="257.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Label fx:id="planet19" layoutX="15.0" layoutY="262.0" text="Label" />
+                        <Button fx:id="buy19" layoutX="325.0" layoutY="257.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Button fx:id="sell20" layoutX="380.0" layoutY="287.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Label fx:id="planet20" layoutX="15.0" layoutY="292.0" text="Label" />
+                        <Button fx:id="buy20" layoutX="325.0" layoutY="287.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Button fx:id="sell15" layoutX="380.0" layoutY="137.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Label fx:id="planet14" layoutX="15.0" layoutY="112.0" text="Label" />
+                        <Button fx:id="buy15" layoutX="325.0" layoutY="137.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Button fx:id="sell16" layoutX="380.0" layoutY="167.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Label fx:id="planet15" layoutX="15.0" layoutY="142.0" text="Label" />
+                        <Button fx:id="buy16" layoutX="325.0" layoutY="167.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Button fx:id="sell17" layoutX="380.0" layoutY="197.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Label fx:id="planet17" layoutX="15.0" layoutY="202.0" text="Label" />
+                        <Button fx:id="buy17" layoutX="325.0" layoutY="197.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Button fx:id="buy14" layoutX="325.0" layoutY="107.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Label fx:id="planet13" layoutX="15.0" layoutY="82.0" text="Label" />
+                        <Button fx:id="sell14" layoutX="380.0" layoutY="107.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Button fx:id="buy13" layoutX="325.0" layoutY="77.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Label fx:id="planet12" layoutX="15.0" layoutY="52.0" text="Label" />
+                        <Button fx:id="sell13" layoutX="380.0" layoutY="77.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Button fx:id="buy11" layoutX="325.0" layoutY="17.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Button fx:id="sell11" layoutX="380.0" layoutY="17.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Label fx:id="planet11" layoutX="15.0" layoutY="22.0" text="Label" />
+                        <Label fx:id="price19" layoutX="85.0" layoutY="264.0" text="Label" />
+                        <Label fx:id="interest19" layoutX="135.0" layoutY="264.0" text="Label" />
+                        <Label fx:id="interest20" layoutX="135.0" layoutY="294.0" text="Label" />
+                        <Label fx:id="price20" layoutX="85.0" layoutY="294.0" text="Label" />
+                        <Label fx:id="price15" layoutX="85.0" layoutY="144.0" text="Label" />
+                        <Label fx:id="interest15" layoutX="135.0" layoutY="144.0" text="Label" />
+                        <Label fx:id="interest16" layoutX="135.0" layoutY="174.0" text="Label" />
+                        <Label fx:id="price16" layoutX="85.0" layoutY="174.0" text="Label" />
+                        <Label fx:id="price18" layoutX="85.0" layoutY="234.0" text="Label" />
+                        <Label fx:id="interest18" layoutX="135.0" layoutY="234.0" text="Label" />
+                        <Label fx:id="interest17" layoutX="135.0" layoutY="204.0" text="Label" />
+                        <Label fx:id="price17" layoutX="85.0" layoutY="204.0" text="Label" />
+                        <Label fx:id="price13" layoutX="85.0" layoutY="84.0" text="Label" />
+                        <Label fx:id="interest13" layoutX="135.0" layoutY="84.0" text="Label" />
+                        <Label fx:id="interest14" layoutX="135.0" layoutY="114.0" text="Label" />
+                        <Label fx:id="price14" layoutX="85.0" layoutY="114.0" text="Label" />
+                        <Label fx:id="price12" layoutX="85.0" layoutY="54.0" text="Label" />
+                        <Label fx:id="interest12" layoutX="135.0" layoutY="54.0" text="Label" />
+                        <Label fx:id="interest11" layoutX="135.0" layoutY="24.0" text="Label" />
+                        <Label fx:id="price11" layoutX="85.0" layoutY="24.0" text="Label" />
+                        <Label layoutX="135.0" layoutY="2.0" text="Interest (%)" />
+                        <Label layoutX="85.0" layoutY="2.0" text="Price" />
+                        <Label fx:id="inv15" layoutX="233.0" layoutY="144.0" text="0" />
+                        <Label fx:id="inv13" layoutX="233.0" layoutY="84.0" text="0" />
+                        <Label fx:id="inv14" layoutX="233.0" layoutY="114.0" text="0" />
+                        <Label fx:id="inv12" layoutX="233.0" layoutY="54.0" text="0" />
+                        <Label fx:id="inv11" layoutX="233.0" layoutY="24.0" text="0" />
+                        <Label layoutX="211.0" layoutY="2.0" text="Inventory" />
+                        <Label fx:id="inv17" layoutX="233.0" layoutY="204.0" text="0" />
+                        <Label fx:id="inv18" layoutX="233.0" layoutY="234.0" text="0" />
+                        <Label fx:id="inv16" layoutX="233.0" layoutY="174.0" text="0" />
+                        <Label fx:id="inv20" layoutX="233.0" layoutY="294.0" text="0" />
+                        <Label fx:id="inv19" layoutX="233.0" layoutY="264.0" text="0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Planet List 3">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="bqt21" layoutX="278.0" layoutY="17.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt24" layoutX="278.0" layoutY="107.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt23" layoutX="278.0" layoutY="77.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt22" layoutX="278.0" layoutY="47.0" prefHeight="26.0" prefWidth="30.0" />
+                        <TextField fx:id="bqt25" layoutX="278.0" layoutY="137.0" prefHeight="26.0" prefWidth="30.0" />
+                        <Button fx:id="sell22" layoutX="380.0" layoutY="47.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Button fx:id="buy22" layoutX="325.0" layoutY="47.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Button fx:id="sell25" layoutX="380.0" layoutY="137.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Label fx:id="planet24" layoutX="13.0" layoutY="112.0" text="Label" />
+                        <Button fx:id="buy25" layoutX="325.0" layoutY="137.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Label fx:id="planet25" layoutX="13.0" layoutY="142.0" text="Label" />
+                        <Button fx:id="buy24" layoutX="325.0" layoutY="107.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Label fx:id="planet23" layoutX="13.0" layoutY="82.0" text="Label" />
+                        <Button fx:id="sell24" layoutX="380.0" layoutY="107.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Button fx:id="buy23" layoutX="325.0" layoutY="77.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Label fx:id="planet22" layoutX="13.0" layoutY="52.0" text="Label" />
+                        <Button fx:id="sell23" layoutX="380.0" layoutY="77.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Button fx:id="buy21" layoutX="325.0" layoutY="17.0" mnemonicParsing="false" onAction="#buyButtonClick" text="Buy" />
+                        <Button fx:id="sell21" layoutX="380.0" layoutY="17.0" mnemonicParsing="false" onAction="#sellButtonClick" text="Sell" />
+                        <Label fx:id="planet21" layoutX="13.0" layoutY="22.0" text="Label" />
+                        <Label fx:id="price25" layoutX="85.0" layoutY="144.0" text="Label" />
+                        <Label fx:id="interest25" layoutX="135.0" layoutY="144.0" text="Label" />
+                        <Label fx:id="price23" layoutX="85.0" layoutY="84.0" text="Label" />
+                        <Label fx:id="interest23" layoutX="135.0" layoutY="84.0" text="Label" />
+                        <Label fx:id="interest24" layoutX="135.0" layoutY="114.0" text="Label" />
+                        <Label fx:id="price24" layoutX="85.0" layoutY="114.0" text="Label" />
+                        <Label fx:id="price22" layoutX="85.0" layoutY="54.0" text="Label" />
+                        <Label fx:id="interest22" layoutX="135.0" layoutY="54.0" text="Label" />
+                        <Label fx:id="interest21" layoutX="135.0" layoutY="24.0" text="Label" />
+                        <Label fx:id="price21" layoutX="85.0" layoutY="24.0" text="Label" />
+                        <Label layoutX="135.0" layoutY="2.0" text="Interest (%)" />
+                        <Label layoutX="85.0" layoutY="2.0" text="Price" />
+                        <Label layoutX="210.0" layoutY="2.0" text="Inventory" />
+                        <Label fx:id="inv21" layoutX="232.0" layoutY="24.0" text="0" />
+                        <Label fx:id="inv22" layoutX="232.0" layoutY="54.0" text="0" />
+                        <Label fx:id="inv24" layoutX="232.0" layoutY="114.0" text="0" />
+                        <Label fx:id="inv23" layoutX="232.0" layoutY="84.0" text="0" />
+                        <Label fx:id="inv25" layoutX="232.0" layoutY="144.0" text="0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#clickBackButton" text="Back" />
+      <Label layoutX="14.0" layoutY="48.0" prefHeight="18.0" prefWidth="87.0" text="Player Name:" />
+      <Label fx:id="playerNameLabel" layoutX="41.0" layoutY="66.0" text="Name" />
+      <Label layoutX="19.0" layoutY="102.0" text="Player Credit:" />
+      <Label fx:id="playerCreditLabel" layoutX="42.0" layoutY="118.0" text="Credit" />
+   </children>
+</AnchorPane>

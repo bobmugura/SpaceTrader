@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" stylesheets="@shipyardBackground.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.controller.ShipYardScreenController">
+   <children>
+      <Label fx:id="maxFuel" layoutX="218.0" layoutY="308.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="fuelCost" layoutX="218.0" layoutY="282.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="hullStrength" layoutX="218.0" layoutY="251.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="price" layoutX="218.0" layoutY="335.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="maxCrewSize" layoutX="218.0" layoutY="222.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="maxGadgetSlots" layoutX="218.0" layoutY="192.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="maxShieldSlots" layoutX="218.0" layoutY="162.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="maxWeaponSlots" layoutX="218.0" layoutY="132.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="maxCargoBay" layoutX="218.0" layoutY="102.0" prefHeight="16.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="336.0" text="Price:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="252.0" text="Hull Strength:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="283.0" text="Fuel Cost:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="309.0" text="Max Fuel:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="223.0" text="Max Crew Size:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="193.0" text="Max Gadget Slots:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="163.0" text="Max Shield Slots:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="133.0" text="Max Weapon Slots:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="103.0" text="Max Cargo Bay:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="42.0" text="Ship Type:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ComboBox fx:id="cbShipTypes" layoutX="113.0" layoutY="37.0" onAction="#choiceBoxSelect" prefHeight="26.0" prefWidth="171.0" promptText="No ships Available" />
+      <Button fx:id="tradeB" layoutX="116.0" layoutY="456.0" mnemonicParsing="false" onAction="#clickTradeButton" text="Trade" />
+      <Label layoutX="431.0" layoutY="460.0" text="Player Credit:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="creditP" layoutX="586.0" layoutY="460.0" prefHeight="16.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="401.0" layoutY="86.0" text="Player's Ship Type:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="401.0" layoutY="116.0" text="Max Cargo Bay:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="401.0" layoutY="146.0" text="Max Weapon Slots:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="401.0" layoutY="176.0" text="Max Shield Slots:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="401.0" layoutY="206.0" text="Max Gadget Slots:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="401.0" layoutY="236.0" text="Max Crew Size:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="401.0" layoutY="322.0" text="Max Fuel:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="401.0" layoutY="296.0" text="Fuel Cost:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="401.0" layoutY="265.0" text="Hull Strength:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="maxCargoBayP" layoutX="575.0" layoutY="118.0" prefHeight="16.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="maxWeaponSlotsP" layoutX="575.0" layoutY="148.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="maxShieldSlotsP" layoutX="575.0" layoutY="178.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="maxGadgetSlotsP" layoutX="575.0" layoutY="208.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="maxCrewSizeP" layoutX="575.0" layoutY="238.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="hullStrengthP" layoutX="575.0" layoutY="267.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="fuelCostP" layoutX="575.0" layoutY="298.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="maxFuelP" layoutX="575.0" layoutY="324.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="shipTypesP" layoutX="575.0" layoutY="88.0" prefHeight="16.0" prefWidth="150.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Button layoutX="56.0" layoutY="456.0" mnemonicParsing="false" onAction="#clickBackButton" text="Back" />
+      <Button layoutX="186.0" layoutY="456.0" mnemonicParsing="false" onAction="#clickRefuelButton" text="Refuel" />
+      <Label layoutX="401.0" layoutY="349.0" text="Fuel Level:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="fuelLv" layoutX="575.0" layoutY="349.0" prefHeight="20.0" prefWidth="35.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Button layoutX="256.0" layoutY="456.0" mnemonicParsing="false" onAction="#clickEquipmentButton" text="Equipment" />
+   </children>
+</AnchorPane>

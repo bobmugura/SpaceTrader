@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@loadBackground.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.controller.LoadScreenController">
+   <children>
+      <Button fx:id="bLoad" layoutX="221.0" layoutY="287.0" mnemonicParsing="false" onAction="#ClickLoadButton" prefHeight="51.0" prefWidth="177.0" text="Load" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" stylesheets="@createBackground.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.controller.ConfigurationDialogController">
+   <children>
+      <Button fx:id="cancelButton" layoutX="602.0" layoutY="396.0" mnemonicParsing="false" onAction="#openWelcomeScreen" text="Cancel" />
+      <Button fx:id="acceptButton" layoutX="530.0" layoutY="396.0" mnemonicParsing="false" onAction="#openGameScreen" text="Accept" />
+      <Label layoutX="36.0" layoutY="59.0" text="Name:" />
+      <TextField fx:id="nameField" layoutX="87.0" layoutY="54.0" prefHeight="31.0" prefWidth="232.0" />
+      <Label layoutX="468.0" layoutY="160.0" text="Pilot">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="467.0" layoutY="201.0" text="Fighter">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="468.0" layoutY="241.0" text="Trader">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="468.0" layoutY="282.0" text="Engineer">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="468.0" layoutY="323.0" text="Investor">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="483.0" layoutY="54.0" prefHeight="31.0" prefWidth="153.0" text="Skills Points Available:" wrapText="true" />
+      <Button fx:id="engineerDown" layoutX="539.0" layoutY="277.0" mnemonicParsing="false" onAction="#engineerLevelChange" rotate="270.0" text="^" />
+      <Button fx:id="traderDown" layoutX="539.0" layoutY="236.0" mnemonicParsing="false" onAction="#traderLevelChange" rotate="270.0" text="^" />
+      <Button fx:id="fighterDown" layoutX="539.0" layoutY="196.0" mnemonicParsing="false" onAction="#fighterLevelChange" rotate="270.0" text="^" />
+      <Button fx:id="investorDown" layoutX="539.0" layoutY="318.0" mnemonicParsing="false" onAction="#investorLevelChange" rotate="270.0" text="^" />
+      <Button fx:id="pilotDown" layoutX="539.0" layoutY="155.0" mnemonicParsing="false" onAction="#pilotLevelChange" rotate="270.0" text="^" />
+      <Button fx:id="pilotUp" layoutX="644.0" layoutY="155.0" mnemonicParsing="false" onAction="#pilotLevelChange" rotate="90.0" text="^" />
+      <Button fx:id="investorUp" layoutX="644.0" layoutY="318.0" mnemonicParsing="false" onAction="#investorLevelChange" rotate="90.0" text="^" />
+      <Button fx:id="fighterUp" layoutX="644.0" layoutY="196.0" mnemonicParsing="false" onAction="#fighterLevelChange" rotate="90.0" text="^" />
+      <Button fx:id="traderUp" layoutX="644.0" layoutY="236.0" mnemonicParsing="false" onAction="#traderLevelChange" rotate="90.0" text="^" />
+      <Button fx:id="engineerUp" layoutX="644.0" layoutY="277.0" mnemonicParsing="false" onAction="#engineerLevelChange" rotate="90.0" text="^" />
+      <Label fx:id="pilotLabel" layoutX="592.0" layoutY="155.0" prefHeight="31.0" prefWidth="31.0" textAlignment="CENTER" />
+      <Label fx:id="fighterLabel" layoutX="592.0" layoutY="196.0" prefHeight="31.0" prefWidth="31.0" textAlignment="CENTER" />
+      <Label fx:id="traderLabel" layoutX="592.0" layoutY="236.0" prefHeight="31.0" prefWidth="31.0" textAlignment="CENTER" />
+      <Label fx:id="engineerLabel" layoutX="592.0" layoutY="277.0" prefHeight="31.0" prefWidth="31.0" textAlignment="CENTER" />
+      <Label fx:id="investorLabel" layoutX="592.0" layoutY="318.0" prefHeight="31.0" prefWidth="31.0" textAlignment="CENTER" />
+      <Label fx:id="pointsLabel" layoutX="644.0" layoutY="54.0" prefHeight="31.0" prefWidth="31.0" />
+   </children>
+</AnchorPane>

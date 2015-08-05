@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" stylesheets="@planetBackground.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.controller.PlanetScreenController">
+   <children>
+      <TabPane layoutX="309.0" layoutY="14.0" prefHeight="494.0" prefWidth="427.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="                    Buy                    ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="632.0" prefWidth="432.0">
+                     <children>
+                        <Button fx:id="bb9" layoutX="305.0" layoutY="411.0" mnemonicParsing="false" onAction="#buyButtonClick" prefHeight="25.0" prefWidth="50.0" text="Buy" />
+                        <Button fx:id="bm9" layoutX="365.0" layoutY="411.0" mnemonicParsing="false" onAction="#buyMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <TextField fx:id="bqt9" alignment="CENTER" layoutX="236.0" layoutY="411.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="bb8" layoutX="305.0" layoutY="371.0" mnemonicParsing="false" onAction="#buyButtonClick" prefHeight="25.0" prefWidth="50.0" text="Buy" />
+                        <Button fx:id="bm8" layoutX="365.0" layoutY="371.0" mnemonicParsing="false" onAction="#buyMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <TextField fx:id="bqt8" alignment="CENTER" layoutX="236.0" layoutY="371.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="bb7" layoutX="305.0" layoutY="331.0" mnemonicParsing="false" onAction="#buyButtonClick" prefHeight="25.0" prefWidth="50.0" text="Buy" />
+                        <Button fx:id="bm7" layoutX="365.0" layoutY="331.0" mnemonicParsing="false" onAction="#buyMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <TextField fx:id="bqt7" alignment="CENTER" layoutX="236.0" layoutY="331.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="bb6" layoutX="305.0" layoutY="291.0" mnemonicParsing="false" onAction="#buyButtonClick" prefHeight="25.0" prefWidth="50.0" text="Buy" />
+                        <Button fx:id="bm6" layoutX="365.0" layoutY="291.0" mnemonicParsing="false" onAction="#buyMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <TextField fx:id="bqt6" alignment="CENTER" layoutX="236.0" layoutY="291.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="bb5" layoutX="305.0" layoutY="251.0" mnemonicParsing="false" onAction="#buyButtonClick" prefHeight="25.0" prefWidth="50.0" text="Buy" />
+                        <Button fx:id="bm5" layoutX="365.0" layoutY="251.0" mnemonicParsing="false" onAction="#buyMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <TextField fx:id="bqt5" alignment="CENTER" layoutX="236.0" layoutY="251.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="bb4" layoutX="305.0" layoutY="211.0" mnemonicParsing="false" onAction="#buyButtonClick" prefHeight="25.0" prefWidth="50.0" text="Buy" />
+                        <Button fx:id="bm4" layoutX="365.0" layoutY="211.0" mnemonicParsing="false" onAction="#buyMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <TextField fx:id="bqt4" alignment="CENTER" layoutX="236.0" layoutY="211.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="bb3" layoutX="305.0" layoutY="171.0" mnemonicParsing="false" onAction="#buyButtonClick" prefHeight="25.0" prefWidth="50.0" text="Buy" />
+                        <Button fx:id="bm3" layoutX="365.0" layoutY="171.0" mnemonicParsing="false" onAction="#buyMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <TextField fx:id="bqt3" alignment="CENTER" layoutX="236.0" layoutY="171.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="bb2" layoutX="305.0" layoutY="131.0" mnemonicParsing="false" onAction="#buyButtonClick" prefHeight="25.0" prefWidth="50.0" text="Buy" />
+                        <Button fx:id="bm2" layoutX="365.0" layoutY="131.0" mnemonicParsing="false" onAction="#buyMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <TextField fx:id="bqt2" alignment="CENTER" layoutX="236.0" layoutY="131.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="bb1" layoutX="305.0" layoutY="91.0" mnemonicParsing="false" onAction="#buyButtonClick" prefHeight="25.0" prefWidth="50.0" text="Buy" />
+                        <Button fx:id="bm1" layoutX="365.0" layoutY="91.0" mnemonicParsing="false" onAction="#buyMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <TextField fx:id="bqt1" alignment="CENTER" layoutX="236.0" layoutY="91.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <TextField fx:id="bqt0" alignment="CENTER" layoutX="236.0" layoutY="51.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="bm0" layoutX="365.0" layoutY="51.0" mnemonicParsing="false" onAction="#buyMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <Button fx:id="bb0" layoutX="305.0" layoutY="51.0" mnemonicParsing="false" onAction="#buyButtonClick" prefHeight="25.0" prefWidth="50.0" text="Buy" />
+                        <Label alignment="CENTER" layoutX="12.0" layoutY="54.0" prefHeight="25.0" prefWidth="65.0" text="Water" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="12.0" layoutY="94.0" prefHeight="25.0" prefWidth="65.0" text="Fur" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="12.0" layoutY="134.0" prefHeight="25.0" prefWidth="65.0" text="Food" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="8.0" layoutY="254.0" prefHeight="27.0" prefWidth="73.0" text="Firearms" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="12.0" layoutY="214.0" prefHeight="25.0" prefWidth="65.0" text="Game" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="12.0" layoutY="174.0" prefHeight="25.0" prefWidth="65.0" text="Ore" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutY="334.0" prefHeight="27.0" prefWidth="89.0" text="Machines" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="3.0" layoutY="374.0" prefHeight="27.0" prefWidth="83.0" text="Narcotics" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="12.0" layoutY="414.0" prefHeight="25.0" prefWidth="65.0" text="Robots" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="4.0" layoutY="294.0" prefHeight="27.0" prefWidth="81.0" text="Medicine" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bql6" alignment="CENTER" layoutX="162.0" layoutY="294.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bpl6" alignment="CENTER" layoutX="87.0" layoutY="294.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bpl9" alignment="CENTER" layoutX="87.0" layoutY="414.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bql9" alignment="CENTER" layoutX="162.0" layoutY="414.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bpl8" alignment="CENTER" layoutX="87.0" layoutY="374.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bql8" alignment="CENTER" layoutX="162.0" layoutY="374.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bql7" alignment="CENTER" layoutX="162.0" layoutY="334.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bpl7" alignment="CENTER" layoutX="87.0" layoutY="334.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bpl3" alignment="CENTER" layoutX="87.0" layoutY="174.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bql3" alignment="CENTER" layoutX="162.0" layoutY="174.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bql4" alignment="CENTER" layoutX="162.0" layoutY="214.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bpl4" alignment="CENTER" layoutX="87.0" layoutY="214.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bql5" alignment="CENTER" layoutX="162.0" layoutY="254.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bpl5" alignment="CENTER" layoutX="87.0" layoutY="254.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bpl2" alignment="CENTER" layoutX="87.0" layoutY="134.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bql2" alignment="CENTER" layoutX="162.0" layoutY="134.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bpl1" alignment="CENTER" layoutX="87.0" layoutY="94.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bql1" alignment="CENTER" layoutX="162.0" layoutY="94.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bql0" alignment="CENTER" layoutX="162.0" layoutY="54.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="bpl0" alignment="CENTER" layoutX="87.0" layoutY="54.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="162.0" layoutY="14.0" prefHeight="25.0" prefWidth="60.0" text="Stock" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="87.0" layoutY="14.0" prefHeight="25.0" prefWidth="60.0" text="Price" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="                    Sell                    ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="632.0" prefWidth="463.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Label alignment="CENTER" layoutX="89.0" layoutY="11.0" prefHeight="25.0" prefWidth="60.0" text="Price" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="164.0" layoutY="11.0" prefHeight="25.0" prefWidth="60.0" text="Cargo" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="spl0" alignment="CENTER" layoutX="89.0" layoutY="51.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="sql0" alignment="CENTER" layoutX="164.0" layoutY="51.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="sql1" alignment="CENTER" layoutX="164.0" layoutY="91.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="spl1" alignment="CENTER" layoutX="89.0" layoutY="91.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="sql2" alignment="CENTER" layoutX="164.0" layoutY="131.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="spl2" alignment="CENTER" layoutX="89.0" layoutY="131.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="spl5" alignment="CENTER" layoutX="89.0" layoutY="251.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="sql5" alignment="CENTER" layoutX="164.0" layoutY="251.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="spl4" alignment="CENTER" layoutX="89.0" layoutY="211.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="sql4" alignment="CENTER" layoutX="164.0" layoutY="211.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="sql3" alignment="CENTER" layoutX="164.0" layoutY="171.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="spl3" alignment="CENTER" layoutX="89.0" layoutY="171.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="spl7" alignment="CENTER" layoutX="89.0" layoutY="331.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="sql7" alignment="CENTER" layoutX="162.0" layoutY="334.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="sql8" alignment="CENTER" layoutX="164.0" layoutY="371.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="spl8" alignment="CENTER" layoutX="89.0" layoutY="371.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="sql9" alignment="CENTER" layoutX="164.0" layoutY="411.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="spl9" alignment="CENTER" layoutX="89.0" layoutY="411.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="spl6" alignment="CENTER" layoutX="89.0" layoutY="291.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="sql6" alignment="CENTER" layoutX="164.0" layoutY="291.0" prefHeight="25.0" prefWidth="60.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="2.0" layoutY="290.0" prefHeight="27.0" prefWidth="89.0" text="Medicines" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="411.0" prefHeight="25.0" prefWidth="65.0" text="Robots" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="6.0" layoutY="371.0" prefHeight="27.0" prefWidth="82.0" text="Narcotics" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="2.0" layoutY="331.0" prefHeight="27.0" prefWidth="89.0" text="Machines" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="171.0" prefHeight="25.0" prefWidth="65.0" text="Ore" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="211.0" prefHeight="25.0" prefWidth="65.0" text="Game" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="250.0" prefHeight="27.0" prefWidth="73.0" text="Firearms" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="131.0" prefHeight="25.0" prefWidth="65.0" text="Food" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="91.0" prefHeight="25.0" prefWidth="65.0" text="Fur" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="51.0" prefHeight="25.0" prefWidth="65.0" text="Water" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Button fx:id="sb0" layoutX="305.0" layoutY="51.0" mnemonicParsing="false" onAction="#sellButtonClick" prefHeight="25.0" prefWidth="50.0" text="Sell" />
+                        <Button fx:id="sm0" layoutX="365.0" layoutY="51.0" mnemonicParsing="false" onAction="#sellMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <TextField fx:id="sqt0" alignment="CENTER" layoutX="236.0" layoutY="51.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <TextField fx:id="sqt1" alignment="CENTER" layoutX="236.0" layoutY="91.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="sm1" layoutX="365.0" layoutY="91.0" mnemonicParsing="false" onAction="#sellMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <Button fx:id="sb1" layoutX="305.0" layoutY="91.0" mnemonicParsing="false" onAction="#sellButtonClick" prefHeight="25.0" prefWidth="50.0" text="Sell" />
+                        <TextField fx:id="sqt2" alignment="CENTER" layoutX="236.0" layoutY="131.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="sm2" layoutX="365.0" layoutY="131.0" mnemonicParsing="false" onAction="#sellMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <Button fx:id="sb2" layoutX="305.0" layoutY="131.0" mnemonicParsing="false" onAction="#sellButtonClick" prefHeight="25.0" prefWidth="50.0" text="Sell" />
+                        <TextField fx:id="sqt3" alignment="CENTER" layoutX="236.0" layoutY="171.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="sm3" layoutX="365.0" layoutY="171.0" mnemonicParsing="false" onAction="#sellMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <Button fx:id="sb3" layoutX="305.0" layoutY="171.0" mnemonicParsing="false" onAction="#sellButtonClick" prefHeight="25.0" prefWidth="50.0" text="Sell" />
+                        <TextField fx:id="sqt4" alignment="CENTER" layoutX="236.0" layoutY="211.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="sm4" layoutX="365.0" layoutY="211.0" mnemonicParsing="false" onAction="#sellMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <Button fx:id="sb4" layoutX="305.0" layoutY="211.0" mnemonicParsing="false" onAction="#sellButtonClick" prefHeight="25.0" prefWidth="50.0" text="Sell" />
+                        <TextField fx:id="sqt5" alignment="CENTER" layoutX="236.0" layoutY="251.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="sm5" layoutX="365.0" layoutY="251.0" mnemonicParsing="false" onAction="#sellMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <Button fx:id="sb5" layoutX="305.0" layoutY="251.0" mnemonicParsing="false" onAction="#sellButtonClick" prefHeight="25.0" prefWidth="50.0" text="Sell" />
+                        <TextField fx:id="sqt6" alignment="CENTER" layoutX="236.0" layoutY="291.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="sm6" layoutX="365.0" layoutY="291.0" mnemonicParsing="false" onAction="#sellMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <Button fx:id="sb6" layoutX="305.0" layoutY="291.0" mnemonicParsing="false" onAction="#sellButtonClick" prefHeight="25.0" prefWidth="50.0" text="Sell" />
+                        <TextField fx:id="sqt7" alignment="CENTER" layoutX="236.0" layoutY="331.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="sm7" layoutX="365.0" layoutY="331.0" mnemonicParsing="false" onAction="#sellMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <Button fx:id="sb7" layoutX="305.0" layoutY="331.0" mnemonicParsing="false" onAction="#sellButtonClick" prefHeight="25.0" prefWidth="50.0" text="Sell" />
+                        <TextField fx:id="sqt8" alignment="CENTER" layoutX="236.0" layoutY="371.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="sm8" layoutX="365.0" layoutY="371.0" mnemonicParsing="false" onAction="#sellMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <Button fx:id="sb8" layoutX="305.0" layoutY="371.0" mnemonicParsing="false" onAction="#sellButtonClick" prefHeight="25.0" prefWidth="50.0" text="Sell" />
+                        <TextField fx:id="sqt9" alignment="CENTER" layoutX="236.0" layoutY="411.0" onKeyReleased="#intInputChecker" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="sm9" layoutX="365.0" layoutY="411.0" mnemonicParsing="false" onAction="#sellMaxClick" prefHeight="25.0" prefWidth="50.0" text="Max" />
+                        <Button fx:id="sb9" layoutX="305.0" layoutY="411.0" mnemonicParsing="false" onAction="#sellButtonClick" prefHeight="25.0" prefWidth="50.0" text="Sell" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="14.0" layoutY="45.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="14.0" text="Planet Information" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="planetName" layoutX="109.0" layoutY="45.0" prefHeight="20.0" prefWidth="150.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="72.0" text="Location:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="planetTechLevel" layoutX="109.0" layoutY="102.0" prefHeight="21.0" prefWidth="150.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="102.0" text="Tech Level:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="134.0" text="Environment:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="planetCoordinate" layoutX="109.0" layoutY="72.0" prefHeight="20.0" prefWidth="150.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="planetResource" layoutX="109.0" layoutY="134.0" prefHeight="20.0" prefWidth="150.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+
+      <Label layoutX="15.0" layoutY="430.0" text="Credit:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="playerCredit" layoutX="106.0" layoutY="428.0" prefHeight="20.0" prefWidth="150.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Button layoutX="38.0" layoutY="505.0" mnemonicParsing="false" onAction="#openNavigationScreen" prefHeight="31.0" prefWidth="114.0" text="Travel" />
+      <Label layoutX="14.0" layoutY="368.0" text="Player Information" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="16.0" layoutY="398.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="playerName" layoutX="106.0" layoutY="398.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="219.0" text="Ship Information" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="253.0" text="Type:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="15.0" layoutY="285.0" text="Cargo:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="shipType" layoutX="108.0" layoutY="251.0" prefHeight="20.0" prefWidth="150.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="cargoCap" layoutX="164.0" layoutY="283.0" prefHeight="20.0" prefWidth="35.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="136.0" layoutY="285.0" prefHeight="17.0" prefWidth="6.0" text="/" textFill="WHITE" />
+      <Label fx:id="cargoHold" layoutX="108.0" layoutY="283.0" prefHeight="20.0" prefWidth="24.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="16.0" layoutY="317.0" text="Fuel:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="fuelTank" layoutX="109.0" layoutY="315.0" prefHeight="20.0" prefWidth="35.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Button layoutX="171.0" layoutY="505.0" mnemonicParsing="false" onAction="#openShipYardScreen" prefHeight="31.0" prefWidth="114.0" text="Ship Yard" />
+
+      <Label layoutX="141.0" layoutY="317.0" text="/" textFill="WHITE" />
+      <Label fx:id="fuelCap" layoutX="164.0" layoutY="315.0" prefHeight="20.0" prefWidth="35.0" text="0" textFill="WHITE" />
+      <Button fx:id="redoButton" layoutX="672.0" layoutY="505.0" mnemonicParsing="false" onAction="#commandButtonListener" text="Redo" />
+      <Button fx:id="undoButton" layoutX="608.0" layoutY="506.0" mnemonicParsing="false" onAction="#commandButtonListener" text="Undo" />
+      <Label fx:id="planetGovernment" layoutX="109.0" layoutY="167.0" prefHeight="20.0" prefWidth="150.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="167.0" text="Government:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="297.0" layoutY="505.0" mnemonicParsing="false" onAction="#openStockMarketScreen" prefHeight="31.0" prefWidth="114.0" text="Stock Market" />
+      <Button layoutX="423.0" layoutY="506.0" mnemonicParsing="false" onAction="#openBankingScreen" prefHeight="31.0" prefWidth="114.0" text="Banking" />
+   </children>
+</AnchorPane>
